@@ -251,24 +251,20 @@
 
 .section-title_theme_dark {
   color: white;
-  border: 2px solid red;
   }
 
 .section-subtitle_theme_dark {
   color: white;
-  border: 2px solid red;
- }
+  }
 
 .table_theme_dark {
-  border: 2px solid red;
-}
+  }
 
 .table__cell_theme_dark {
   width: 200px;
   color: white;
   margin-right: 0;
   margin-top: 80px;
-  border: 2px solid red;
   z-index: 2;
   }
 
@@ -287,7 +283,7 @@
   }
 
   .table__text_theme_dark:last-of-type {
-    margin-bottom: 0;
+   margin-bottom: 0;
   }
 
 .kaufman__triangle {
@@ -312,15 +308,15 @@
 
 .footer__columns {
   width: 90%;
+  min-height: 250px;
   display: flex;
   flex-direction: row;
-  justify-content: stretch;
-  border: 2px solid red;
-}
+  justify-content: space-between;
+  margin: auto;
+  }
 
 .footer__columns_content_copyright {
   color: white;
-  border: 2px solid red;
   flex-basis: 711px;
   display: flex;
   flex-direction: column;
@@ -330,7 +326,6 @@
 .logo_place_footer {
 width: 183px;
 height: 35px;
-border: 2px solid red;
 }
 
 .footer__author {
@@ -338,7 +333,6 @@ border: 2px solid red;
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
-  border: 2px solid red;
   margin: 0;
   padding: 18px 0;
 }
@@ -348,7 +342,8 @@ border: 2px solid red;
   border: 2px solid red;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: start;
+  
 }
 
 .footer__column-heading {
@@ -358,39 +353,41 @@ border: 2px solid red;
   font-weight: bold;
   border: 2px solid red;
   margin: 0;
+  display: block;
 }
 
 .footer__column-links {
   border: 0 solid red;
-  margin: 20px 0 16px 0;
   padding: 0;
+  margin: 20px 0 16px 0;
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.footer__column-link {
+  text-decoration: none;
   color: white;
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
   list-style: none;
-  text-decoration: none;
-}
+  margin: 0;
+  padding: 0;
+  }
 
 .footer__columns_content_social {
-  border: 2px solid red;
-  color: white;
-  list-style: none;
-  text-decoration: none;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
- }
-
-.footer__column-link {
-  text-decoration: none;
-  color: white;
+  justify-content: start;
+  border: 2px solid red;
   }
 
 .footer__social-icon {
   width: 16px;
   height: 16px;
-  list-style: none;
   margin: 0 10px 0 0;
   padding: 0;
   }
