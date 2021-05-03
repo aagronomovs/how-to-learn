@@ -163,8 +163,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   list-style: none;
   padding: 0;
 }
@@ -178,15 +177,15 @@
   line-height: 1.15;
   font-size: 24px;
   font-weight: bold;
-  margin-top: 0;
-  margin-bottom: 20px;
+  margin: 0;
 }
 
 .table__text {
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
-  margin-top: 0;
+  margin-top: 20px;
+  margin-bottom: 0;
 }
 
 .table__text:last-of-type {
