@@ -1,3 +1,12 @@
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -18,6 +27,7 @@
   display: flex;
   padding-left: 64px;
   z-index: 0;
+  overflow: hidden;
 }
 
 .header__title {
@@ -46,10 +56,12 @@
 .header__link {
   color: #2f80ed;
   text-decoration: none;
+  opacity: 1;
+  transition: opacity 1s ease;
 }
 
 .header__link:hover {
-  color: green;
+  opacity: 0.5;
 }
 
 .header__main-illustration {
@@ -72,24 +84,13 @@
   border: 4px #2f80ed;
   margin: 0;
   z-index: -2;
-  }
-
-.header__square-pic:hover {
   animation: rotation 20s linear infinite;
-}
+  }
 
 .rotation {
   animation: rotation 20s linear infinite;
 }
 
-@keyframes_.rotation {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 
 .logo {
   width: 183px;
@@ -182,7 +183,6 @@
   line-height: 1.15;
   font-size: 24px;
   font-weight: bold;
-  border: 1px solid red;
   margin-top: 43px;
 }
 
@@ -191,8 +191,7 @@
   font-size: 18px;
   font-weight: normal;
   margin-top: 16px;
-  border: 1px solid red;
-}
+  }
 
 .cards__image {
   height: 160px;
@@ -244,8 +243,7 @@
   margin: auto;
   margin-bottom: 20px;
   text-align: center;
-  border: 1px solid red;
-}
+  }
 
 .section-subtitle {
   line-height: 34px;
@@ -254,8 +252,7 @@
   width: 60%;
   margin: auto;
   text-align: center;
-  border: 1px solid red;
-} 
+  } 
 
 .table {
   width: 1100px;
@@ -335,10 +332,12 @@
   position: absolute;
   top: 50%;
   right: 48px;
+  opacity: 1;
+  transition: opacity 1s ease;
 }
 
 .feynman__link:hover {
-  color: green;
+  opacity: 0.5;
 }
 
 .feynman__main-illustration {
@@ -351,19 +350,16 @@
 }
 
 .khan {
-  width: 80%;
   margin: 0;
   background-color: #f2f2f2;
   padding: 105px 0 0;
-}
+  display: block;
+ }
 
 .khan__container {
   margin: 0 auto;
   width: 80%;
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: flex-start;
+  display: block;
   }
 
 .khan__author {
@@ -412,7 +408,7 @@
   width: 620px;
   height: 608px;
   object-fit: cover;
-  object-position: left bottom;
+  object-position: left top;
 }
 
 .khan__buy-link {
@@ -422,6 +418,12 @@
   text-decoration: none;
   color: #2f80ed;
   margin: 0 0 0 48px;
+  opacity: 1;
+  transition: opacity 1s ease;
+  }
+
+  .khan__buy-link:hover {
+    opacity: 0.5;
   }
 
 .kaufman {
@@ -477,6 +479,27 @@
   right: -210px;
   top: 0;
   z-index: -1;
+  animation: rotation 20s linear infinite;
+}
+
+.resources {
+  margin: 100px 0 217px;
+}
+
+.resources__logo-zone {
+  margin: 80px auto 0;
+  width: 1100px;
+  }
+
+.resources__logo {
+  width: 270px;
+  height: 38px;
+  opacity: 1;
+  transition: opacity 1s ease;
+}
+
+.resources__logo:hover {
+  opacity: 0.5;
 }
 
 .footer {
@@ -559,10 +582,12 @@ height: 35px;
   list-style: none;
   margin: 0;
   padding: 0;
+  opacity: 1;
+  transition: opacity 1s ease;
 }
 
 .footer__column-link:hover {
-  color: green;
+  opacity: 0.5;
 }
 
 .footer__column_content_social {
@@ -576,8 +601,10 @@ height: 35px;
   height: 16px;
   margin: 0 10px 0 0;
   padding: 0;
+  opacity: 1;
+  transition: opacity 1s ease;
 }
 
 .footer__social-icon:hover {
-  color: green;
+  opacity: 0.5;
 }
