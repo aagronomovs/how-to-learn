@@ -1,0 +1,9 @@
+.footer__column-links {
+    padding: 0;
+    margin: 20px 0 16px 0;
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
